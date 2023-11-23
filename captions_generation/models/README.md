@@ -1,0 +1,1 @@
+The Open Assistant model is cached here, in order to avoid downloading it each time a script it is executed.
