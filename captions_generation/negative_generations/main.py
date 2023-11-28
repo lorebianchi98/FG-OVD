@@ -111,7 +111,7 @@ def main():
     
     random.seed(SEED)
     # load PACO objects
-    paco_objects = loadObject('../datasets/not_captioned')
+    paco_objects = loadObject('../cache/prepared_paco_lvis_v1_test')
     
     # merge dataset
     data = merge_dataset(args.input_dir, args.output_file)
