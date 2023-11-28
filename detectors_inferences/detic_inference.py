@@ -158,8 +158,8 @@ def main():
         image_filepath = coco_path + get_image_filepath(ann['image_id'], data['images'])
         imm = cv2.imread(image_filepath)
         
-        if vocabulary_id[0] == 30426:
-            continue
+        # if vocabulary_id[0] == 30426:
+        #     continue
         
         output = evaluate_image(predictor, text_encoder, imm, vocabulary)
         output['category_id'] = ann['category_id']
