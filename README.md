@@ -1,4 +1,4 @@
-# FG-OVD
+# Fine-Grained Open Vocabulary object Detection (FG-OVD)
 Official repository of the paper "The devil is in the fine-grained details: Evaluating open-vocabulary object detectors for fine-grained understanding"
 ## Installation
 To perform the dataset collection it will be necessary to create a Docker container using the following commands:
