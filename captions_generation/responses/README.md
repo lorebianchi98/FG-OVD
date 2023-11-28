@@ -1,1 +1,0 @@
-In this directory it will be cached the results of the first caption question

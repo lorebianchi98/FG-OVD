@@ -1,1 +1,0 @@
-In this directory it will be cached partial results, in order to avoid that an error during the dataset creation (for example, CUDA out of memory), forces the user to reexecute all the code

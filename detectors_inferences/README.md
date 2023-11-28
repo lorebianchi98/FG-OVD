@@ -1,2 +1,0 @@
-# Detector inference scripts
-These scripts are designed for conducting inferences on the benchmarks using various detectors. For proper execution, insert these scripts into the official directory of the corresponding detector within the correct environment. 

@@ -1,1 +1,0 @@
-Download here the base dataset json to process. We opted for paco_lvis_v1_test.json and strategically divided it into four separate files, enabling us to conduct inferences at different intervals. 
