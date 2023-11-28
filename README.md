@@ -1,14 +1,10 @@
 # The Emotions of the Crowd - Website
 
-This is the repository that contains source code for the [website](https://fabiocarrara.github.io/cross-modal-visual-sentiment-analysis).
+This is the repository that contains source code for the [website](https://lorebianchi98.github.io/FG-OVD/).
 
 If you find this work useful, please cite:
 ```
-@article{serra2023emotions,
-  author    = {Serra, Alessio and Carrara, Fabio and Tesconi, Maurizio and Falchi, Fabrizio},
-  title     = {The Emotions of the Crowd: Learning Image Sentiment from Tweets via Cross-modal Distillation},
-  journal   = {ECAI},
-  year      = {2023},
+Add BibTex here
 }
 ```
 
