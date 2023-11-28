@@ -33,8 +33,9 @@ def main():
     dataset_file_name = "datasets/%s.json" % dataset_name
     # loading Open Assistant model and tokenizer
     print("Loading model and tokenizer...")
-    tokenizer = LlamaTokenizer.from_pretrained("models/oasst-sft-6-llama-30b-xor/oasst-sft-6-llama-30b", padding_side="left")
-    model = LlamaForCausalLM.from_pretrained("models/oasst-sft-6-llama-30b-xor/oasst-sft-6-llama-30b", device_map='auto', load_in_8bit=True)
+    models_path = "models/oasst-sft-6-llama-30b"
+    tokenizer = LlamaTokenizer.from_pretrained(models_path, padding_side="left")
+    model = LlamaForCausalLM.from_pretrained(models_path, device_map='auto', load_in_8bit=True)
     print('done')
     
     # creating the list of structured object in order to construct the questions for Open Assistant
@@ -47,6 +48,7 @@ def main():
     assert count_obj_with_parts_no_attr(data) == 0, "There are parts with no attributes unfiltered!"
     saveObject(data, "cache/prepared_%s" % dataset_name)
     saveObject(to_fill, "cache/prepared_tofill_%s" % dataset_name)
+    
     # # asking Open Assistant the captions
     data = open_assistant.get_captions_one_part_batched(model, tokenizer, data, batch_size=args.batch_size, context_question=True)
     saveObject(data, 'pickle/%s_captioned' % dataset_name)
