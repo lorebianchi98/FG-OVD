@@ -1,10 +1,16 @@
-# The Emotions of the Crowd - Website
+# The devil is in the fine-grained details - Website
 
 This is the repository that contains source code for the [website](https://lorebianchi98.github.io/FG-OVD/).
 
 If you find this work useful, please cite:
 ```
-Add BibTex here
+@misc{bianchi2023devil,
+        title={The devil is in the fine-grained details: Evaluating open-vocabulary object detectors for fine-grained understanding}, 
+        author={Lorenzo Bianchi and Fabio Carrara and Nicola Messina and Claudio Gennaro and Fabrizio Falchi},
+        year={2023},
+        eprint={2311.17518},
+        archivePrefix={arXiv},
+        primaryClass={cs.CV}
 }
 ```
 
