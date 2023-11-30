@@ -1,5 +1,5 @@
-# Benchamrks Suite
-These are the 8 benchmarks used in our experiments.
+# Benchamarks Suite
+These are the 8 benchmarks used in our experiments. Note that our benchmarks are based on COCO dataset, you need to download 2017 images from the official [website](https://cocodataset.org/#download).
 ## Difficulty-based benchmarks
 - 1_attributes.json -> *Hard*
 - 2_attributes.json -> *Medium*

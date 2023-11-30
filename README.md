@@ -63,11 +63,12 @@ data["categories"]: # a list of dictionaries, each dictionary corresponds to one
 ```
 ## Reference
 If you found this code useful, please cite the following paper:
-@misc{bianchi2023devil,
-      title={The devil is in the fine-grained details: Evaluating open-vocabulary object detectors for fine-grained understanding}, 
-      author={Lorenzo Bianchi and Fabio Carrara and Nicola Messina and Claudio Gennaro and Fabrizio Falchi},
-      year={2023},
-      eprint={2311.17518},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
-}
+
+      @misc{bianchi2023devil,
+            title={The devil is in the fine-grained details: Evaluating open-vocabulary object detectors for fine-grained understanding}, 
+            author={Lorenzo Bianchi and Fabio Carrara and Nicola Messina and Claudio Gennaro and Fabrizio Falchi},
+            year={2023},
+            eprint={2311.17518},
+            archivePrefix={arXiv},
+            primaryClass={cs.CV}
+      }
