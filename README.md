@@ -1,7 +1,13 @@
 # Fine-Grained Open Vocabulary object Detection (FG-OVD)
 <span style="font-size: xx-large;">[Project page](https://lorebianchi98.github.io/FG-OVD/) | [![arXiv](https://img.shields.io/badge/arXiv-2311.17518-b31b1b.svg)](https://arxiv.org/abs/2311.17518) 
 
-Official repository of the paper "The devil is in the fine-grained details: Evaluating open-vocabulary object detectors for fine-grained understanding".
+Official repository of the paper **"The devil is in the fine-grained details: Evaluating open-vocabulary object detectors for fine-grained understanding"**.
+
+## Updates
+
+- :fire: 02/2024: **"The devil is in the fine-grained details: Evaluating open-vocabulary object detectors for fine-grained understanding"** has been accepted to CVPR2024!
+
+
 ## Installation
 To perform the dataset collection it will be necessary to create a Docker container using the following commands:
 ```bash
