@@ -149,3 +149,8 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+#ack img {
+  float: left;
+  margin-right: 15px;
+}
