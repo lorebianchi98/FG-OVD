@@ -1,10 +1,13 @@
 # Fine-Grained Open Vocabulary object Detection (FG-OVD)
-<span style="font-size: xx-large;">[Project page](https://lorebianchi98.github.io/FG-OVD/) | [![arXiv](https://img.shields.io/badge/arXiv-2311.17518-b31b1b.svg)](https://arxiv.org/abs/2311.17518) 
+<span style="font-size: xx-large;">[Project page](https://lorebianchi98.github.io/FG-OVD/) | [<img src="https://img.shields.io/badge/arXiv-2311.17518-b31b1b.svg" style="width: 180; margin-top: 15px;">](https://arxiv.org/abs/2311.17518)
 
 Official repository of the paper **"The devil is in the fine-grained details: Evaluating open-vocabulary object detectors for fine-grained understanding"**.
 
 ## Updates
 
+- :fire: 04/2024: **"The devil is in the fine-grained details: Evaluating open-vocabulary object detectors for fine-grained understanding"** has been selected as a highlight at CVPR2024, representing just 11.9% of accepted papers.
+- :fire: 04/2024: An extension of this work, **"Is CLIP the main roadblock for fine-grained open-world perception?"** , is now available in pre-print ([arXiv](https://arxiv.org/abs/2404.03539)) ([Code](https://github.com/lorebianchi98/FG-CLIP)).
+- :fire: 03/2024: The first FG-OVD trainining sets are available in this repository at `training_sets`.
 - :fire: 02/2024: **"The devil is in the fine-grained details: Evaluating open-vocabulary object detectors for fine-grained understanding"** has been accepted to CVPR2024!
 
 
