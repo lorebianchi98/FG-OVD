@@ -3,6 +3,9 @@
 
 Official repository of the paper **"The devil is in the fine-grained details: Evaluating open-vocabulary object detectors for fine-grained understanding"**.
 
+The benchmarks described in the paper can be found in the `benchmarks` folder of this repository. Refer to [Creates dataset](#creates-dataset) to find the steps for reproducing the benchmark generation process.
+
+Additionally, curated training and validation sets, created following the benchmark generation procedure, are available in the `training_sets` and `validation_sets` folders.
 ## Updates
 
 - :fire: 04/2024: **"The devil is in the fine-grained details: Evaluating open-vocabulary object detectors for fine-grained understanding"** has been selected as a highlight at CVPR2024, representing just 11.9% of accepted papers.
