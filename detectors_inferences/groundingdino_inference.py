@@ -270,10 +270,11 @@ if __name__ == "__main__":
         # if it is, the vocabulary is clipped and if it is too short, we skip that image
         vocabulary, vocabulary_id = create_vocabulary(ann, data['categories'])
         if args.n_hardnegatives < 10:
-            if len(vocabulary) < args.n_hardnegatives:
+            len_vocabulary = args.n_hardnegatives + 1
+            if len(vocabulary) < len_vocabulary:
                 continue
-            vocabulary = vocabulary[:args.n_hardnegatives]
-            vocabulary_id = vocabulary_id[:args.n_hardnegatives]
+            vocabulary = vocabulary[:len_vocabulary]
+            vocabulary_id = vocabulary_id[:len_vocabulary]
         image_filepath = args.imgs_path + '/' + get_image_filepath(ann['image_id'], data['images'])
         # load image
         image_pil, imm = load_image(image_filepath)

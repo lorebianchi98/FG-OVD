@@ -238,6 +238,11 @@ if __name__ == "__main__":
             if args.disable_nms:
                 pred = get_image_preds(preds_per_image[imm['file_name']])
             else:
+                # in case the ground truth for the image includes captions not processed by the detector, we remove them
+                relevant_cats = [predictions['category_id'] for predictions in preds_per_image[imm['file_name']]]
+                mask = torch.isin(target['labels'], torch.tensor(relevant_cats))
+                target['labels'] = target['labels'][mask]
+                target['boxes'] = target['boxes'][mask]
                 preds_per_cat = [get_image_preds([pred_per_cat]) for pred_per_cat in preds_per_image[imm['file_name']]]
                 preds_per_cat = [apply_NMS(pred_per_cat) for pred_per_cat in preds_per_cat]
                 pred = {
