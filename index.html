@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.ico">
+  <link rel="icon" href="./static/images/icon.png">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -24,6 +24,39 @@
   <script src="./static/js/index.js"></script>
 </head>
 <body>
+
+<!-- More Research -->
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        
+        <!-- <a class="navbar-item" href="https://concept-fusion.github.io">
+        <span class="icon">
+            <i class="fas fa-home"></i>
+        </span>
+        </a> -->
+  
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Related Research
+          </a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://arxiv.org/abs/2404.03539">
+              FG-CLIP
+            </a>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </nav>
 
 <!-- More Research
 <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -141,6 +174,16 @@
                   </span>
                   <span>Data</span>
                   </a>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=3AIbqptBhmo"
+                class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
             </div>
           </div>
         </header>
@@ -162,9 +205,19 @@
 </section>
 -->
 
-<!-- Teaser. -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video Summary</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/3AIbqptBhmo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+<!-- Teaser. -->
     <div class="hero-body">
       <img src="./static/images/overview.png" alt="Teaser" class="teaser-image">
     </div>
@@ -212,7 +265,27 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="./static/images/examples.png" alt="Teaser" class="teaser-image">
+      <img src="./static/images/examples.png" alt="Examples" class="teaser-image">
+    </div>
+  </div>
+</section>
+<!-- Results -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Results</h2>
+        <div class="content has-text-justified">
+          <div class="hero-body">
+            <img src="./static/images/map.png" alt="Examples" class="teaser-image">
+            <img src="./static/images/rank.png" alt="Examples" class="teaser-image">
+          </div>
+          <p>We evaluated some state-of-the-art models on our suite of benchmarks. On the y-axis of the first two rows of the graphs, there is the mean Average Precision (mAP) of the models and, on the x-axis, the number of negative captions in the vocabulary. While every model correctly detects objects in the absence of negative captions, they struggle when the number of fine-grained negative captions increases in every configuration. This does not happen in the Trivial benchmark because it does not contain fine-grained differences between positive and negative captions. This suggests that the main problem lies in correctly classifying the attributes of an object rather than localizing an object described by a complex natural language description. Among the attribute types we tested, colors are the easiest to discern, as they are more frequent in common datasets.
+          </p><p>
+            Alongside mAP, we report the Median Rank of the correct caption when the vocabulary is sorted by descending scores across all detected objects in the benchmark. We introduced this metric because mAP only considers the maximally activated label. Instead, the median rank helps to better quantify the confidence of each detector in predicting the correct label among the other choices available in the vocabulary. For example, in the Hard benchmark with eight or more negatives, even the top-performing models place the correct caption in the third position or lower for half of the objects.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
