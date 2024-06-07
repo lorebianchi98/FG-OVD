@@ -205,36 +205,37 @@
 </section>
 -->
 
-<section class="hero teaser">
+<section class="teaser">
   <div class="container is-max-desktop">
     <!-- Paper video. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video Summary</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/3AIbqptBhmo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
+        <figure class="content publication-video image is-16by9">
+          <iframe class="has-ratio" src="https://www.youtube.com/embed/3AIbqptBhmo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </figure>
       </div>
     </div>
     <!--/ Paper video. -->
-<!-- Teaser. -->
-    <div class="hero-body">
-      <img src="./static/images/overview.png" alt="Teaser" class="teaser-image">
-    </div>
   </div>
 </section>
+
 <section class="section pt-0">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+      <div class="column is-full-width">
+        <!-- Teaser. -->
+        <div class="hero-body">
+          <h2 class="title is-3">Abstract</h2>
+          <img src="./static/images/overview.png" alt="Teaser" class="teaser-image">
+        </div>
         <div class="content has-text-justified">
           <p>
             Recent advancements in large vision-language models enabled visual object detection in open-vocabulary scenarios, where object classes are defined in free-text formats during inference.
           </p>
           <p>
-            In this paper, we aim to probe the state-of-the-art methods for open-vocabulary object detection to determine to what extent they understand fine-grained properties of objects and their parts.
+            In this paper, we aim to <strong>probe the state-of-the-art methods for open-vocabulary object detection</strong> to determine to what extent they understand fine-grained properties of objects and their parts.
             To this end, we introduce an evaluation protocol based on dynamic vocabulary generation to test whether models detect, discern, and assign the correct fine-grained description to objects in the presence of hard-negative classes.
             We contribute with a benchmark suite of increasing difficulty and probing different properties like color, pattern, and material.
             We further enhance our investigation by evaluating several state-of-the-art open-vocabulary object detectors using the proposed protocol and find that most existing solutions, which shine in standard open-vocabulary benchmarks, struggle to accurately capture and distinguish finer object details.
@@ -246,26 +247,16 @@
       </div>
     </div>
     <!--/ Abstract. -->
-
-    <!-- Paper video.
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-    -->
   </div>
 </section>
 <!-- Examples -->
 
-<section class="hero teaser">
+<section class="section pt-0">
   <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="./static/images/examples.png" alt="Examples" class="teaser-image">
+    <div class="content is-four-fifths">
+      <div class="hero-body">
+        <img src="./static/images/examples.png" alt="Examples" class="teaser-image">
+      </div>
     </div>
   </div>
 </section>
@@ -276,14 +267,14 @@
       <div class="column is-full-width">
         <h2 class="title is-3">Results</h2>
         <div class="content has-text-justified">
-          <div class="hero-body">
+          <p>We evaluated some state-of-the-art models on our benchmark suite. On the y-axis of the first two rows of the graphs, there is the mean Average Precision (mAP) of the models and, on the x-axis, the number of negative captions in the vocabulary. While every model correctly detects objects in the absence of negative captions, they struggle when the number of fine-grained negative captions increases in every configuration. This does not happen in the Trivial benchmark because it does not contain fine-grained differences between positive and negative captions. This suggests that the main problem lies in correctly classifying the attributes of an object rather than localizing an object described by a complex natural language description. Among the attribute types we tested, colors are the easiest to discern, as they are more frequent in common datasets.</p>
+          <figure>
             <img src="./static/images/map.png" alt="Examples" class="teaser-image">
+          </figure>
+          <p>Alongside mAP, we report the Median Rank of the correct caption when the vocabulary is sorted by descending scores across all detected objects in the benchmark. We introduced this metric because mAP only considers the maximally activated label. Instead, the median rank helps to better quantify the confidence of each detector in predicting the correct label among the other choices available in the vocabulary. For example, in the Hard benchmark with eight or more negatives, even the top-performing models place the correct caption in the third position or lower for half of the objects.</p>
+          <figure>
             <img src="./static/images/rank.png" alt="Examples" class="teaser-image">
-          </div>
-          <p>We evaluated some state-of-the-art models on our suite of benchmarks. On the y-axis of the first two rows of the graphs, there is the mean Average Precision (mAP) of the models and, on the x-axis, the number of negative captions in the vocabulary. While every model correctly detects objects in the absence of negative captions, they struggle when the number of fine-grained negative captions increases in every configuration. This does not happen in the Trivial benchmark because it does not contain fine-grained differences between positive and negative captions. This suggests that the main problem lies in correctly classifying the attributes of an object rather than localizing an object described by a complex natural language description. Among the attribute types we tested, colors are the easiest to discern, as they are more frequent in common datasets.
-          </p><p>
-            Alongside mAP, we report the Median Rank of the correct caption when the vocabulary is sorted by descending scores across all detected objects in the benchmark. We introduced this metric because mAP only considers the maximally activated label. Instead, the median rank helps to better quantify the confidence of each detector in predicting the correct label among the other choices available in the vocabulary. For example, in the Hard benchmark with eight or more negatives, even the top-performing models place the correct caption in the third position or lower for half of the objects.
-          </p>
+          </figure>
         </div>
       </div>
     </div>
