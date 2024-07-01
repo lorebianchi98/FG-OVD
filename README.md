@@ -18,7 +18,7 @@ Additionally, curated training and validation sets, created following the benchm
 To perform the dataset collection it will be necessary to create a Docker container using the following commands:
 ```bash
 git clone https://github.com/lorebianchi98/FG-OVD.git
-cd FG-OVD/docker
+cd FG-OVD/captions_generation/docker
 docker image build -t IMAGE_NAME - < Dockerfile
 ```
 
