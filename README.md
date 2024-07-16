@@ -75,6 +75,12 @@ data["categories"]: # a list of dictionaries, each dictionary corresponds to one
     'frequency':        char, # always 'f'
 }
 ```
+
+## Corrections
+
+The mAP in the paper for Detic with the number of negatives equal to 2 (*N=2*) depicted in *Table 3* for the Transparency benchmark is **24.6** instead of 28. Thanks to [iMayuqi](https://github.com/iMayuqi) for reporting this issue.
+
+
 ## Reference
 If you found this code useful, please cite the following paper:
 
