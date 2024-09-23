@@ -7,9 +7,9 @@ The benchmarks described in the paper can be found in the `benchmarks` folder of
 
 Additionally, curated training and validation sets, created following the benchmark generation procedure, are available in the `training_sets` and `validation_sets` folders.
 ## Updates
-
+- :fire: 09/2024: The extension of this work, **"Is CLIP the main roadblock for fine-grained open-world perception?"**, won the *Best Paper Award* at CBMI 2024!
 - :fire: 04/2024: **"The devil is in the fine-grained details: Evaluating open-vocabulary object detectors for fine-grained understanding"** has been selected as a highlight at CVPR2024, representing just 11.9% of accepted papers.
-- :fire: 04/2024: An extension of this work, **"Is CLIP the main roadblock for fine-grained open-world perception?"** , is now available in pre-print ([arXiv](https://arxiv.org/abs/2404.03539)) ([Code](https://github.com/lorebianchi98/FG-CLIP)).
+- :fire: 04/2024: An extension of this work, **"Is CLIP the main roadblock for fine-grained open-world perception?"**, is now available in pre-print ([arXiv](https://arxiv.org/abs/2404.03539)) ([Code](https://github.com/lorebianchi98/FG-CLIP)).
 - :fire: 03/2024: The first FG-OVD trainining sets are available in this repository at `training_sets`.
 - :fire: 02/2024: **"The devil is in the fine-grained details: Evaluating open-vocabulary object detectors for fine-grained understanding"** has been accepted to CVPR2024!
 
