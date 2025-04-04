@@ -8,7 +8,7 @@ The benchmarks described in the paper can be found in the `benchmarks` folder of
 Additionally, curated training and validation sets, created following the benchmark generation procedure, are available in the `training_sets` and `validation_sets` folders.
 ## Updates
 - <img src="NoctOWL/assets/noctowl.png" alt="noctowl" width="25"/> 04/2025: We released **NoctOWL** (***N****ot **o**nly **c**oarse-**t**ext **OWL***), an adaptation of the OWL detector specifically designed for **Fine-Grained Open-Vocabulary Detection (FG-OVD)**.
-- :fire: 09/2024: The extension of this work, **"Is CLIP the main roadblock for fine-grained open-world perception?"**, won the *Best Paper Award* at CBMI 2024!
+- :fire: 09/2024: A follow-up of this work, **"Is CLIP the main roadblock for fine-grained open-world perception?"**, won the *Best Paper Award* at CBMI 2024!
 - :fire: 04/2024: **"The devil is in the fine-grained details: Evaluating open-vocabulary object detectors for fine-grained understanding"** has been selected as a highlight at CVPR2024, representing just 11.9% of accepted papers.
 - :fire: 04/2024: An extension of this work, **"Is CLIP the main roadblock for fine-grained open-world perception?"**, is now available in pre-print ([arXiv](https://arxiv.org/abs/2404.03539)) ([Code](https://github.com/lorebianchi98/FG-CLIP)).
 - :fire: 03/2024: The first FG-OVD trainining sets are available in this repository at `training_sets`.
