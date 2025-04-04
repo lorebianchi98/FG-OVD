@@ -2,6 +2,8 @@
 
 This repository contains the code to train **NoctOWL** (***N****ot **o**nly **c**oarse-**t**ext **OWL***), an adaptation of the OWL detector specifically designed for **Fine-Grained Open-Vocabulary Detection (FG-OVD)**. NoctOWL is optimized to balance fine- and coarse-grained detection capabilities, improving recognition of subtle object attributes such as color, material, and pattern.  
 
+A detailed paper on NoctOWL will be available soon.
+
 ## Installation  
 
 To set up the environment, run: 
