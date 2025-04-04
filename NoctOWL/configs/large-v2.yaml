@@ -1,0 +1,15 @@
+data:
+  images_path: ../coco/
+  test_annotations_file: ../validation_sets/1_attributes.json
+  train_annotations_file: ../training_sets/1_attributes.json
+training:
+  base_model: google/owlv2-large-patch14
+  batch_size: 4
+  learning_rate: 3e-6
+  ltype: triplet
+  margin: 0.15
+  n_accumulation_steps: 8
+  n_epochs: 20
+  n_hardnegatives: 10
+  self_distillation: mse
+  weight_decay: 0.1

@@ -1,0 +1,9 @@
+transformers
+scipy 
+tensorboard 
+pandas
+nbformat
+tabulate
+torchmetrics==0.6.0
+pycocotools
+opencv-python
